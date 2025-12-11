@@ -94,15 +94,12 @@
 
         <!-- Winner Screen -->
         <div class="winner-screen hidden" id="winnerScreen">
-            <div class="stars">
-                <div class="star star1">★</div>
-                <div class="star star2">★</div>
-                <div class="star star3">★</div>
-                <div class="star star4">★</div>
-                <div class="star star5">★</div>
-                <div class="star star6">★</div>
+            <div class="star">
+                    <img src="assets/Group.svg" alt="close" />
             </div>
-            <div class="trophy">🏆</div>
+            <div class="trophy">
+                <img src="assets/cup.svg" alt="close" />
+            </div>
             <h1 class="winner-title">HURRAY!!</h1>
             <p class="winner-subtitle">YOU WON THE GAME</p>
             <button class="play-again-btn" id="playAgainWinner">PLAY AGAIN</button>
@@ -112,7 +109,10 @@
         <!-- Rules Popup -->
         <div class="rules-popup" id="rulesPopup">
             <div class="rules-content">
-                <button class="close-btn" id="closeRules">✕</button>
+                <button class="close-btn" id="closeRules">
+                    <div class="x-image">
+                        <img src="assets/X.svg" alt="close" />
+                </button>
                 <h2 class="rules-title">Game Rules</h2>
                 <ul class="rules-list">
                     <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
@@ -121,6 +121,7 @@
                     <li>If both players lay down the same hand, each player lays down another hand.</li>
                 </ul>
             </div>
+        </div>
         </div>
     </div>
 

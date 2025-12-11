@@ -66,7 +66,7 @@ body {
     position: absolute;
     width: 103px;
     height: 20px;
-    left: 685px;
+    left: 693px;
     top: 84px;
     font-family: 'Roboto';
     font-style: normal;
@@ -82,7 +82,7 @@ body {
     position: absolute;
     width: 61px;
     height: 16px;
-    left: 700px;
+    left: 710px;
     top: 106px;
     font-family: 'Roboto';
     font-style: normal;
@@ -96,8 +96,8 @@ body {
 /* Computer Score */
 .computer-score {
     position: absolute;
-    width: 79px;
-    height: 63px;
+    width: 80px;
+    height: 60px;
     left: 700px;
     top: 128px;
     font-family: 'Roboto';
@@ -156,8 +156,8 @@ body {
 /* Your Score */
 .your-score {
     position: absolute;
-    width: 79px;
-    height: 63px;
+    width: 80px;
+    height: 60px;
     left: 860px;
     top: 128px;
     font-family: 'Roboto';
@@ -185,7 +185,8 @@ body {
     height: 0px;
     left: 400px;
     top: 355px;
-    border: 10px solid rgba(0, 0, 0, 0.70);
+    border: 10px solid rgba(0, 0, 0);
+    opacity: 64%;
     z-index: 0;
 }
 
@@ -197,7 +198,8 @@ body {
     height: 0px;
     left: 402px;
     top: 362px;
-    border: 10px solid rgba(0, 0, 0, 0.70);
+    border: 10px solid rgba(0, 0, 0);
+    opacity: 64%;
     transform: rotate(60deg);
     transform-origin: left center;
     z-index: 0;
@@ -210,7 +212,8 @@ body {
     height: 0px;
     left: 557px;
     top: 605px;
-    border: 10px solid rgba(0, 0, 0, 0.70);
+    border: 10px solid rgba(0, 0, 0);
+    opacity: 64%;
     transform: rotate(-60deg);
     transform-origin: left center;
     z-index: 0;
@@ -260,18 +263,18 @@ body {
 
 /* Icons */
 .rock-btn .icon {
-    width: 70px;
-    height: 52px;
+    width: 62px;
+    height: 80px;
 }
 
 .paper-btn .icon {
-    width: 65px;
-    height: 65px;
+    width: 72px;
+    height: 72px;
 }
 
 .scissors-btn .icon {
-    width: 35px;
-    height: 50px;
+    width: 37px;
+    height: 53px;
     transform: rotate(5.27deg);
 }
 
@@ -280,10 +283,10 @@ body {
 /* Rectangle 2 */
 .rules-btn {
     position: absolute;
-    width: 110px;
-    height: 42px;
+    width: 115px;
+    height: 40px;
     left: 1205px;
-    bottom: 53px;
+    bottom: 100px;
     background: transparent;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
@@ -311,10 +314,10 @@ body {
 
 .rules-popup {
     position: fixed;
-    right: 90px;
-    bottom: 140px;
-    width: auto;
-    height: auto;
+    right: 60px;
+    bottom: 160px;
+    width: 325px;
+    height: 278px;
     background: transparent;
     display: flex;
     justify-content: flex-start;
@@ -325,35 +328,36 @@ body {
 /* Frame 4 */
 .rules-content {
     position: relative;
-    width: 310px;
+    width: 290px;
+    height: 350px;
     background: #004429;
     border: 7px solid #FFFFFF;
     border-radius: 13px;
-    padding: 30px;
+    padding: 28px;
 }
 
 /* Ellipse 6 - Close Button */
 .close-btn {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    right: -20px;
-    top: -25px;
+    width: 50px;
+    height: 50px;
+    right: -30px;
+    top: -30px;
     background: #FF0000;
-    border: 5px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     border-radius: 50%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
     color: #FFFFFF;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1;
-    border: none;
-    outline: none;
+    line-height: 10px;
+    
+}
+.x-image img{
+    width: 53px;
+    height: 24px;
+    padding: auto;
 }
 
 .close-btn:hover {
@@ -506,21 +510,36 @@ body {
     transform: scale(1.05);
 }
 
+/* Play Again button specifically in Winner Screen */
+.winner-screen .play-again-btn {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.winner-screen .play-again-btn:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
 .next-btn {
     position: absolute;
+    width: 115px;
+    height: 40px;
     right: 100px;
-    bottom: 50px;
-    background: #FFFFFF;
+    bottom: 100px;
+    background: transparent;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 21px;
     line-height: 19px;
     letter-spacing: 0.1em;
-    color: #656565;
-    padding: 12px 40px;
+    color: white;
+    padding: 10px 20px;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -606,56 +625,26 @@ body {
     align-items: center;
 }
 
-.stars {
+.star{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    top: 100px;
+    left: 375px;
+    width: 297px;
+    height: 504px;
 }
 
-.star {
-    position: absolute;
-    color: white;
-    font-size: 60px;
-    opacity: 0;
-    animation: twinkle 2s infinite;
-}
-
-.star1 { top: 20%; left: 25%; animation-delay: 0s; }
-.star2 { top: 30%; right: 30%; font-size: 40px; animation-delay: 0.3s; }
-.star3 { top: 50%; left: 20%; font-size: 50px; animation-delay: 0.6s; }
-.star4 { top: 60%; right: 25%; font-size: 35px; animation-delay: 0.9s; }
-.star5 { top: 40%; right: 20%; font-size: 45px; animation-delay: 1.2s; }
-.star6 { top: 25%; left: 45%; font-size: 30px; animation-delay: 1.5s; }
-
-@keyframes twinkle {
-    0%, 100% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.2);
-    }
-}
 
 .trophy {
-    font-size: 200px;
-    margin-bottom: 30px;
-    animation: bounce 1s infinite;
-    z-index: 10;
+    position: absolute;
+    top: 200px;
+    height: 200px;
+    width: 200px;
 }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-30px);
-    }
-}
 
 .winner-title {
+    position: absolute;
+    bottom: 240px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -668,6 +657,8 @@ body {
 }
 
 .winner-subtitle {
+    position: relative;
+    top: 170px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
