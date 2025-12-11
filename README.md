@@ -1,5 +1,7 @@
 # Rock Paper Scissors Game
 
+Deployed at: https://rock-paper-scissor-ebon-ten.vercel.app/ and https://nigam1010.github.io/rock-paper-scissor/
+
 A modern, interactive Rock Paper Scissors game built with vanilla JavaScript, HTML5, and CSS3.
 
 ## Features
@@ -107,6 +109,8 @@ Works on all modern browsers:
 Free to use and modify.
 
 ## Author
+
+Karinigam S A
 
 Created as part of a JavaScript module project.
 
